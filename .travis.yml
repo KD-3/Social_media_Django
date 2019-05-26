@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.7.1"
+  - "3.6"
 before_install:
   - export DJANGO_SETTINGS_MODULE=Social_media_Django.settings
 install:
