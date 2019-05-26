@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.7.1"
+before_install:
+  - export DJANGO_SETTINGS_MODULE=Social_media_Django.settings
+install:
+  - pip3 install -r requirements.txt
+script:
+  - flake8 .
+  - python3 manage.py makemigrations accounts
+  - python3 manage.py migrate accounts
+  - python3 manage.py makemigrations
+  - python3 manage.py migrate
